@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Fjalla+One&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+     <!-- Creating Form -->
+    <fieldset class="field">
+        <legend>
+            <h2 class="heading">PRODUCT</h2>
+        </legend>
+        <div class="img-container">
+            <img class="form-img" src="./form.jpg" width="100%" height="100%">
+        </div>
+        <div class="form-cont">
+            <form id="product" onsubmit="return false" class="form">
+                <div>Name: <br><input type="text" name="pname" id="pname" title="Enter Product name" style="width:70%;">
+                </div><br>
+                <div>Id: <br> <input type="number" name="pid" id="pid" title="Enter Product Id"></div><br>
+                <div>Price: <br><input type="number" name="pprice" id="pprice" title="Enter Product price"></div><br>
+                <div>Image: <br> <input type="text" name="pimage" id="pimage"></div><br>
+                <div>Description: <br><textarea name="description" cols="40" rows="15" id="pdescription"
+                        placeholder="Add some description about product"></textarea></div><br><br>
+                <div><input type="submit" class="sub" value="Submit" onclick="Submit()">
+                    <input type="reset" class="res" value="Reset" onclick="Reset()">
+                </div>
+            </form>
+        </div>
+
+    </fieldset>
+
+    <br>
+
+    <!-- Creating Table -->
+    <table id="table">
+        <tr>
+            <th>Name</th>
+            <th>Id</th>
+            <th>Price</th>
+            <th>Image</th>
+            <th>Description</th>
+            <th>Operation</th>
+        </tr>
+    </table>
+
+    <!-- Web Page -->
+    <div class="finalcont">
+        <!-- Buttons on the webpage -->
+        <button name="productspage" onclick="display()">Products page</button>
+        <button class="pasc" name="btn">Pricebyasc</button>
+        <button class="pdesc" name="btn">pricebydesc</button>
+        <button class="idasc" name="btn">Idbyasc</button>
+        <button class="iddesc" name="btn">Idbydesc</button>
+        <button class="nameasc" name="btn">Namebyasc</button>
+        <button class="namedesc" name="btn">Namebydesc</button>
+        <br><br><br>
+
+       <!-- Container containing searchbar and products -->
+        <div class="total-cont" id="content" style="display: none;">
+            <div class="searchbar"> 
+                <!-- Searchbar -->
+                <input type="text" placeholder="Search Your Product.." class="searchbarMain">
+            </div>
+            <div class="items">
+                    <!-- Dynamically Adding products here -->
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

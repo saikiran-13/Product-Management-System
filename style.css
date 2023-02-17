@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+}
+.field{
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 25px -3px rgba(0,0,0,0.3);
+    flex:1;
+}
+.heading{
+    font-family: 'Acme', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    color:black;
+    background-color:#92EFFD
+}
+#product{
+    margin: auto;
+}
+.form input,textarea{
+    outline:2px solid salmon;
+    border-radius:2px;
+}
+#product div{
+    width:70%;
+    font-family: 'Fjalla One', sans-serif;
+    margin:5px;
+    border-radius: 2px;
+}
+.img-container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width:400px;
+    height: 600px;
+    max-height: 600px;
+    margin-left:3%;
+    margin-right:3%;
+    flex:0.4;
+}
+.form-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: 0;
+    flex:0.6;
+}
+.form-img{
+    opacity: 0.7;
+    border-radius: 5%;
+    box-shadow: 0 0 25px -3px rgba(0,0,0,0.3);
+  
+}
+table{
+    border-collapse: collapse;
+}
+#table{
+    margin: auto;
+    margin-top:50px;
+    margin-bottom: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight:500;
+    font-size: medium;
+    width: 70%;
+    
+}
+th{
+    color:white;
+    background-color:Orange;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+  }
+
+.total-cont{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width:100%;
+    height:auto;
+    background-color:deepskyblue
+    
+   } 
+.items{
+    display: flex;
+}
+input[type=submit]{
+    width:40%;
+    padding:8px;
+    margin-right: 10px;
+    outline:none;
+    border:none;
+    font-family:'Fjalla One', sans-serif;
+    font-size: medium;
+    background-color: coral;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    cursor:pointer;
+}
+input[type=reset]{
+    width: 40%;
+    margin-left: 10px;
+    padding:8px;
+    outline:none;
+    border:none;
+    font-family:'Fjalla One', sans-serif;
+    font-size: medium;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    background-color: cornsilk;
+    cursor: pointer;
+}
+
+button[class=edit]{
+    width: 40%;
+    margin-left: 10px;
+    padding:5px;
+    outline:none;
+    border:none;
+    background-color:#04AA6D; 
+    font-family:'Fjalla One', sans-serif;
+    font-size: small;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+button[class=delete]{
+    width: 40%;
+    margin-right: 10px;
+    padding:5px;
+    outline:none;
+    border:none;
+    background-color:#eb4b5e; 
+    font-family:'Fjalla One', sans-serif;
+    font-size: small;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    cursor: pointer;  
+}
+button[name=btn],button[name=productspage]{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding:8px;
+    outline:none;
+    border:none;
+    font-family:'Fjalla One', sans-serif;
+    font-size: medium;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    background-color:lightcoral;
+    cursor: pointer;
+}
+button[name=productspage]{
+    background-color:aqua;
+}
+.pics{
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    border-radius: 2px;
+    margin: 2px;
+}
+.Name,.Id,.Price{
+    text-align: center;
+    font-family:'Fjalla One', sans-serif;
+}
+.finalcont{
+    background-color:thistle;
+    margin-top: 5%;
+}
+.container{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      background-color: blanchedalmond;
+      max-width:30%;
+      height: 500px;
+      margin:10px;
+      padding:10px;
+   }
+
+.total-cont .searchbar{
+    display: flex;
+    flex-direction: column;
+    width:20%;
+    height: 15%;
+    float: right;
+    padding: 6px;
+    margin-top:5px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+  }
