@@ -1,12 +1,16 @@
 *{
     box-sizing: border-box;
 }
+body{
+    /* background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
+    background-color: white;
+}
 .field{
     display: flex;
     flex-wrap: wrap;
     margin:auto;
-    background-color: #8EC5FC;
-    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    background-color:whitesmoke;
+    /* background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
     align-items: center;
     justify-content: center;
     max-width: 50%;
@@ -23,10 +27,7 @@
 #product{
     margin: auto;
 }
-.form input,textarea{
-    outline:2px solid salmon;
-    border-radius:2px;
-}
+
 #product div{
     width:70%;
     font-family: 'Fjalla One', sans-serif;
@@ -56,30 +57,6 @@
     box-shadow: 0 0 25px -3px rgba(0,0,0,0.3);
   
 }
-table{
-    border-collapse: collapse;
-}
-#table{
-    margin: auto;
-    margin-top:50px;
-    margin-bottom: 10px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-weight:500;
-    font-size: medium;
-    width: 70%;
-    
-}
-th{
-    color:white;
-    background-color:Orange;
-}
-
-tr:nth-child(even) {background-color: #f2f2f2;}
-
-th, td {
-    text-align: left;
-    padding: 10px;
-  }
 
 .total-cont{
     display: flex;
@@ -87,11 +64,28 @@ th, td {
     flex-direction: column;
     max-width:100%;
     height:auto;
-    background-color:deepskyblue
+    /* background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
+    background-color: white;
     
    } 
 .items{
     display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height:100vh;
+
+}
+.items div{
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 5px;
+    width:fit-content;
+    height:fit-content;
+    flex:0.15;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
 }
 input[type=submit]{
     width:40%;
@@ -119,9 +113,9 @@ input[type=reset]{
 }
 
 button[class=edit]{
-    width: 40%;
-    margin-left: 10px;
-    padding:5px;
+    margin:auto;
+    width: 30%;
+    padding:8px;
     outline:none;
     border:none;
     background-color:#04AA6D; 
@@ -131,28 +125,31 @@ button[class=edit]{
     cursor: pointer;
 }
 button[class=delete]{
-    width: 40%;
-    margin-right: 10px;
-    padding:5px;
+    margin: auto;
+    width: 30%;
+    padding:8px;
     outline:none;
     border:none;
+    margin-top: 5px;
     background-color:#eb4b5e; 
     font-family:'Fjalla One', sans-serif;
     font-size: small;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
     cursor: pointer;  
 }
-button[name=btn],button[name=productspage]{
-    margin-top: 20px;
+button[name=btn]{
+    display: flex;
+    flex-wrap: wrap;
     margin-left: 20px;
-    padding:8px;
+    padding: 8px;
     outline:none;
     border:none;
     font-family:'Fjalla One', sans-serif;
     font-size: medium;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
-    background-color:lightcoral;
+    background-color:cornsilk;
     cursor: pointer;
+    overflow: auto;
 }
 button[name=productspage]{
     background-color:aqua;
@@ -162,34 +159,105 @@ button[name=productspage]{
     border-radius: 2px;
     margin: 2px;
 }
-.Name,.Id,.Price{
-    text-align: center;
+span.Name,span.Id,span.Price,span.Description{
+    margin: auto;
     font-family:'Fjalla One', sans-serif;
 }
 .finalcont{
-    background-color:thistle;
-    margin-top: 5%;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    border-radius: 10px;
+    overflow: auto;
 }
 .container{
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      background-color: blanchedalmond;
+      background-color:whitesmoke;
       max-width:30%;
       height: 500px;
       margin:10px;
       padding:10px;
    }
-
-.total-cont .searchbar{
+.firstcont{
     display: flex;
-    flex-direction: column;
-    width:20%;
-    height: 15%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 1%;
+}
+.searchbar{
+    display: flex;
+    background-color: dodgerblue;
+    border-radius: 10px;
     float: right;
     padding: 6px;
-    margin-top:5px;
-    border: none;
+    border: 2px;
     outline: none;
     font-size: 17px;
+    flex:4;
   }
+.searchbar input{
+    width:100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    flex:1;
+
+  }
+.pagename{
+ display: flex;
+ align-items: center;
+ margin-left: 5%;
+ border-radius: 5px;
+ color:dodgerblue;
+ font-family:'Fjalla One', sans-serif;
+ font-weight: bold;
+ font-size: large;
+ flex:2;
+}
+.space{
+    display:flex;
+    flex:1;
+}
+.mode{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex:3;
+}
+.mode a{
+  display: flex;
+  text-decoration: none;
+  color:darksalmon;
+ font-family:'Fjalla One', sans-serif;
+ font-weight: bold;
+ font-size: large;
+}
+
+.head{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    float:right;
+    align-items: center;
+    justify-content: space-between;
+    flex:1
+}
+.empty{
+    display:flex;
+    flex:0.9;
+}
+.head a{
+    flex:0.1;
+    float:right;
+    text-decoration:underline darksalmon;
+    color:darksalmon;
+    font-family:'Fjalla One', sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+div .span{
+    text-align: center;
+}

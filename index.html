@@ -15,6 +15,11 @@
 </head>
 
 <body>
+    <div class = "head">
+            <div class="empty"></div>
+            <a href = "./products.html">PRODUCTS</a>
+            <a href = "#">HOME</a>
+    </div>
      <!-- Creating Form -->
     <fieldset class="field">
         <legend>
@@ -40,44 +45,17 @@
 
     </fieldset>
 
-    <br>
-
-    <!-- Creating Table -->
-    <table id="table">
-        <tr>
-            <th>Name</th>
-            <th>Id</th>
-            <th>Price</th>
-            <th>Image</th>
-            <th>Description</th>
-            <th>Operation</th>
-        </tr>
-    </table>
-
-    <!-- Web Page -->
-    <div class="finalcont">
-        <!-- Buttons on the webpage -->
-        <button name="productspage" onclick="display()">Products page</button>
-        <button class="pasc" name="btn">Pricebyasc</button>
-        <button class="pdesc" name="btn">pricebydesc</button>
-        <button class="idasc" name="btn">Idbyasc</button>
-        <button class="iddesc" name="btn">Idbydesc</button>
-        <button class="nameasc" name="btn">Namebyasc</button>
-        <button class="namedesc" name="btn">Namebydesc</button>
-        <br><br><br>
+    <br><br><br>
+ 
 
        <!-- Container containing searchbar and products -->
-        <div class="total-cont" id="content" style="display: none;">
-            <div class="searchbar"> 
-                <!-- Searchbar -->
-                <input type="text" placeholder="Search Your Product.." class="searchbarMain">
-            </div>
+        <div class="total-cont" id="content" >
             <div class="items">
                     <!-- Dynamically Adding products here -->
             </div>
         </div>
-    </div>
-    <script src="./script.js"></script>
+    <script src="./forms.js"></script>
+    
 </body>
 
 </html>

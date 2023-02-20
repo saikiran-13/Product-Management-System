@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="./style.css">
+</head>
+<body>
+    <div class ="header">
+        <div class="pagename">PRODIFY</div>
+        <div class="searchbar"> 
+            <!-- Searchbar -->
+            <input type="text" placeholder="Search Your Product.." class="searchbarMain">
+        </div>
+        <div class="space"></div>
+        <div class="mode">
+            <a href = "#">PRODUCTS</a>
+            <a href = "./index.html">HOME</a>
+        </div>
+   
+    </div><br>
+    <div class="finalcont">
+        <!-- Buttons on the webpage -->
+        <!-- <button name="productspage" onclick="display()">Products page</button> -->
+        <div class = "firstcont">
+            <button class = "sort" name = "btn" onclick="Show()">Sort</button>
+            <div class="buttons" style="display:none">
+                <button class="pasc" name="btn">Price:Ascending</button>
+                <button class="pdesc" name="btn">price:Descending</button>
+                <button class="idasc" name="btn">Id:Ascending</button>
+                <button class="iddesc" name="btn">Id:Descending</button>
+                <button class="nameasc" name="btn">Name:Ascending</button>
+                <button class="namedesc" name="btn">Name:Descending</button>
+            </div>
+        </div>
+        
+  <br>
+
+       <!-- Container containing searchbar and products -->
+        <div class="total-cont" id="content" >
+           
+            <div class="items">
+                    <!-- Dynamically Adding products here -->
+            </div>
+        </div>
+    </div>
+    <script src="./view.js"></script>
+</body>
+</html>
